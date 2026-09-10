@@ -14,7 +14,7 @@ For each pixel, the following quantities are calculated:
 - First moment: <I>
 - Second moment: <I²>
 - Temporal variance / zero-lag autocovariance:
-  <I²> - <I>²
+  <I²> -  <I>²
 - Normalized variance:
   (<I²> - <I>²) / (<I>² + epsilon) 
 
@@ -37,10 +37,7 @@ frames × height × width
 
 The script saves:
 
-- mean intensity image
-- second-moment image
 - variance image
-- normalized variance image
 
 as 32-bit TIFF files.
 
