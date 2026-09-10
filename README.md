@@ -7,7 +7,7 @@ Python code used for image reconstruction in the manuscript
 "Scaling and Accelerating Wide-Field Quantum Imaging with Source-Programmable Control".
 
 The code processes multi-frame EMCCD TIFF stacks using temporal first-
-and second-order intensity moments.
+and second-order intensity moments. 
 
 For each pixel, the following quantities are calculated:
 
