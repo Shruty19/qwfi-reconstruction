@@ -11,12 +11,12 @@ and second-order intensity moments.
 
 For each pixel, the following quantities are calculated:
 
-- First moment: <I>
+- First moment: < I >
 - Second moment: <I²>
 - Temporal variance / zero-lag autocovariance:
-  <I²> -  <I>²
+  <I²> -  < I >²
 - Normalized variance:
-  (<I²> - <I>²) / (<I>² + epsilon) 
+  (<I²> - < I >²) / (< I >² + epsilon) 
 
 Large TIFF stacks are processed in batches to limit memory usage.
 
