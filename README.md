@@ -1,13 +1,9 @@
-# qwfi-reconstruction
-Python code for camera-based quantum wide-field image reconstruction using spatial photon correlations.
-
-# QWFI reconstruction
+# QWFI-reconstruction
 
 Python code used for image reconstruction in the manuscript
 "Scaling and Accelerating Wide-Field Quantum Imaging with Source-Programmable Control".
 
-The code processes multi-frame EMCCD TIFF stacks using temporal first-
-and second-order intensity moments. 
+The code processes multi-frame EMCCD TIFF stacks using temporal first-and second-order intensity moments. 
 
 For each pixel, the following quantities are calculated:
 
@@ -37,13 +33,15 @@ frames × height × width
 
 The script saves:
 
-- variance image
+- covariance image
 
 as 32-bit TIFF files.
 
 ## Usage
 
-Edit the input file paths and output path in `reconstruction.py`,
-then run:
+Edit the input file paths and output path in "Cov_Reconstruction.py" then run the code
 
-python reconstruction.py
+## Code and example data
+The code "Cov_Reconstruction.py" demonstrates the reconstruction algorithm used in the manuscript. Running the code on the provided example TIFF stack generates the reconstructed image as a 32-bit floating-point TIFF.
+
+The example dataset contains a spatially cropped 180-frame subset of the experimental EMCCD acquisition shown in Fig. 3a of the manuscript and is provided to demonstrate the reconstruction workflow.
