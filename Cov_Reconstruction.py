@@ -1,5 +1,5 @@
 # ===============================================================
-# Temporal variance reconstruction for QWFI data
+# Covariance reconstruction
 # Author: Shruti Sundar
 #
 # Description:
@@ -212,7 +212,7 @@ variance_image = (
 )
 
 
-# negative values clipped to zero.
+# Negative values clipped to zero.
 variance_image = np.clip(
     variance_image,
     0,
@@ -223,7 +223,7 @@ variance_image = variance_image.astype(
     np.float32
 )
 
-# SAVE RECONSTRUCTION FILE
+# SAVE RECONSTRUCTED FILE
 output_dir.mkdir(
     parents=True,
     exist_ok=True
